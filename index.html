@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>27-12-2025</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <!-- student id card generator -->
+    <!-- 
+    <div id="studentIdCard">
+        <h1>Student ID Card</h1>
+        <p id="name"></p> 
+        <p id="studentRollNo"></p>se
+        <p id="studentAge"></p>
+        <p id="studentClass"></p>
+        <p id="studentSchool"></p>
+        <p id="studentAddress"></p>
+
+    </div> -->
+
+    <section class="container">
+      <section class="left-container">
+        <h1>Student ID Card Generator</h1>
+
+        <form id="eaForm" class="ea-form" novalidate>
+          <div class="row">
+            <label
+              ><input
+                id="studentName"
+                type="text"
+                name="fullName"
+                placeholder="Enter your Fullname"
+            /></label>
+            <label>Email <input type="email" name="email" required /></label>
+          </div>
+
+          <div class="row">
+            <label
+              >Phone
+              <input
+                type="tel"
+                name="phone"
+                placeholder="10 digits Number"
+                required
+            /></label>
+            <p>
+              Date of Birth
+              <input type="text" placeholder="DD/MM/YYYY" required />
+            </p>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" name="agree" required /> I confirm the
+            information is correct.
+          </label>
+
+          <div class="actions">
+            <button type="submit">Submit</button>
+            <button type="reset" class="secondary">Reset</button>
+          </div>
+        </form>
+      </section>
+    </section>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
